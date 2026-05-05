@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Expat Strategic Toolkit | Open Source Resources</title>
+    <meta name="description" content="A curated collection of strategic financial and visa simulation tools for expats in Japan. Powered by Japan-Refactor.">
+    
+    <!-- SEO Open Graph -->
+    <meta property="og:title" content="Japan Expat Strategic Toolkit">
+    <meta property="og:description" content="Professional-grade simulation tools for Japan's tax, pension, and visa systems.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;600;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <style>
+        :root {
+            --bg: #0a0a0c;
+            --card-bg: #16161a;
+            --accent: #3b82f6; /* Premium Blue */
+            --accent-glow: rgba(59, 130, 246, 0.3);
+            --text: #ffffff;
+            --text-dim: #a1a1aa;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 2rem 4rem;
+            display: flex;
+            justify-content: flex-start;
+            z-index: 100;
+        }
+
+        .logo-img {
+            height: 40px; 
+            /* Black to White filter trick */
+            filter: invert(1) hue-rotate(180deg) brightness(1.5);
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        header {
+            min-height: 60vh; /* Increased for better layering */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at 50% 50%, #1e293b 0%, #0a0a0c 100%);
+            padding: 4rem 2rem 8rem; /* Extra padding at bottom for overlap */
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(59, 130, 246, 0.05);
+            border: 1px solid rgba(59, 130, 246, 0.4);
+            color: var(--accent);
+            border-radius: 4px; /* Sharper corners */
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-top: 4.5rem; /* Added 3 lines of space above */
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(2.2rem, 7vw, 3.8rem);
+            font-weight: 900;
+            line-height: 1.0;
+            letter-spacing: -0.04em; /* Tighter letter spacing for sharpness */
+            margin-bottom: 0.8rem;
+            background: linear-gradient(to bottom, #fff 40%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            color: var(--text-dim);
+            max-width: 600px;
+            font-size: 1.1rem;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            margin-bottom: 4rem; /* Exactly 2 lines of space */
+        }
+
+        /* Tool Grid */
+        .container {
+            max-width: 1000px;
+            margin: -120px auto 60px; /* Negative margin for premium layered look */
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .tool-card {
+            background: rgba(22, 22, 26, 0.7); /* Translucent for glassmorphism */
+            backdrop-filter: blur(12px); /* Blur effect */
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 32px;
+            padding: 2rem;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-12px);
+            border-color: var(--accent);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6), 0 0 20px var(--accent-glow);
+        }
+
+        .tool-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .icon-box {
+            font-size: 2rem;
+        }
+
+        .tool-card h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        /* Screenshot Styling */
+        .screenshot-wrap {
+            width: 100%;
+            aspect-ratio: 550 / 650; /* Matches your 550x650px image */
+            background: #27272a;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        .screenshot-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Fills the container while maintaining aspect ratio */
+            transition: transform 0.6s ease;
+        }
+
+        .tool-card:hover .screenshot-wrap img {
+            transform: scale(1.05);
+        }
+
+        /* Fallback if image is missing */
+        .screenshot-wrap::after {
+            content: "Preview Image Loading...";
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            color: #4b5563;
+            font-size: 0.8rem;
+            z-index: -1;
+        }
+
+        .tool-card p {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            flex-grow: 1;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.9rem 1.5rem;
+            background: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .tool-card:hover .btn {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem; /* Reduced from 5rem */
+            color: var(--text-dim);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        footer p { font-size: 0.9rem; max-width: 500px; margin: 0 auto 1rem; }
+        footer a { color: var(--accent); text-decoration: none; font-weight: 600; }
+
+        @media (max-width: 768px) {
+            nav { padding: 2rem; justify-content: center; }
+            header { height: auto; padding: 10rem 2rem 10rem; }
+            .container { margin-top: -60px; grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="https://japan-refactor.com">
+            <img src="logo.png" alt="Japan-Refactor Logo" class="logo-img">
+        </a>
+    </nav>
+
+    <header>
+        <div class="badge">Open Source Project</div>
+        <h1>Japan Strategy Toolkit</h1>
+        <p>A high-performance suite of strategic simulators designed to optimize your financial and legal footprint in Japan. Engineered for precision.</p>
+    </header>
+
+    <div class="container">
+        <!-- Tool 1: HSP Simulator -->
+        <a href="https://japan-refactor.com/high-skilled-professional-visa-japan-engineer/" class="tool-card">
+            <div class="tool-header">
+                <div class="icon-box">🚀</div>
+                <h2>HSP Visa Simulator</h2>
+            </div>
+            <div class="screenshot-wrap">
+                <img src="ss-hsp.png" alt="HSP Simulator Screenshot">
+            </div>
+            <p>Calculate points for the High-Skilled Professional visa. Optimize your path to Permanent Residency in as little as 1 year.</p>
+            <div class="btn">Launch Simulator</div>
+        </a>
+
+        <!-- Tool 2: Tax Navigator -->
+        <a href="https://japan-refactor.com/8million-yen-salary-after-tax/" class="tool-card">
+            <div class="tool-header">
+                <div class="icon-box">📉</div>
+                <h2>Strategic Tax Navigator</h2>
+            </div>
+            <div class="screenshot-wrap">
+                <img src="ss-tax.png" alt="Tax Navigator Screenshot">
+            </div>
+            <p>Visualize your true net income. Simulate the "2nd-year Resident Tax cliff" and discover legal shields for your capital.</p>
+            <div class="btn">Optimize Income</div>
+        </a>
+
+        <!-- Tool 3: Pension Recovery -->
+        <a href="https://japan-refactor.com/japan-pension-refund/" class="tool-card">
+            <div class="tool-header">
+                <div class="icon-box">💰</div>
+                <h2>Pension Recovery Hub</h2>
+            </div>
+            <div class="screenshot-wrap">
+                <img src="ss-pension.png" alt="Pension Recovery Screenshot">
+            </div>
+            <p>Don't leave 20.42% to the sharks. Master the strategy to recover your full pension withdrawal amount.</p>
+            <div class="btn">Recover Funds</div>
+        </a>
+
+        <!-- Tool 4: NHI Survival -->
+        <a href="https://japan-refactor.com/japan-national-health-insurance/" class="tool-card">
+            <div class="tool-header">
+                <div class="icon-box">⚖️</div>
+                <h2>NHI Survival Guide</h2>
+            </div>
+            <div class="screenshot-wrap">
+                <img src="ss-nhi.png" alt="NHI Survival Screenshot">
+            </div>
+            <p>Analyze National Health Insurance premiums for freelancers. Protect your cash flow during the transition phase.</p>
+            <div class="btn">Plan Strategy</div>
+        </a>
+    </div>
+
+    <footer>
+        <p>This toolkit is part of the Japan-Refactor open-source initiative. We provide high-skilled expats with the data they need to thrive.</p>
+        <p>© 2026 Japan Strategy & Expat Tools. Maintained by <a href="https://japan-refactor.com">Japan-Refactor</a>.</p>
+    </footer>
+
+</body>
+</html>
