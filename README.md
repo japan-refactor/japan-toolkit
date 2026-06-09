@@ -6,23 +6,35 @@ This project provides the logical foundation and interactive calculators to opti
 
 ---
 
-## 🛠 Strategic Tools & Resources
+### 1. HSP Visa & Permanent Residency Simulator
 
-We focus on four critical pillars of life in Japan. Each tool is accompanied by a comprehensive strategic guide:
+[![HSP Visa Simulator](ss-hsp.png)](https://japan-refactor.com/high-skilled-professional-visa-japan-engineer/)
+<br>
 
-### 1. [HSP Visa & Permanent Residency Simulator](https://japan-refactor.com/high-skilled-professional-visa-japan-engineer/)
 Maximize your points for the High-Skilled Professional visa. Discover legal shortcuts to Permanent Residency in as little as 1 year.
 - **Key Focus:** Point optimization, J-Skip compliance, and residency fast-tracking.
 
-### 2. [Strategic Tax & Net Salary Navigator](https://japan-refactor.com/8million-yen-salary-after-tax/)
+### 2. Strategic Tax & Net Salary Navigator
+
+[![Strategic Tax Navigator](ss-tax.png)](https://japan-refactor.com/8million-yen-salary-after-tax/)
+<br>
+
 Visualize your true net income. This simulator helps you navigate the "2nd-year Resident Tax cliff" and implement legal shields for your capital.
 - **Key Focus:** Resident Tax optimization, Income Tax brackets, and capital protection.
 
-### 3. [Japan Pension 100% Recovery Blueprint](https://japan-refactor.com/japan-pension-refund/)
+### 3. Japan Pension 100% Recovery Blueprint
+
+[![Japan Pension Blueprint](ss-pension.png)](https://japan-refactor.com/japan-pension-refund/)
+<br>
+
 Plan your exit strategy with precision. Estimate your Lump-sum Withdrawal Payment and master the strategy to recover the 20.42% tax shark.
 - **Key Focus:** Lump-sum withdrawal, Tax Manager setup, and 100% recovery logic.
 
-### 4. [National Health Insurance (NHI) Survival Guide](https://japan-refactor.com/japan-national-health-insurance/)
+### 4. National Health Insurance (NHI) Survival Guide
+
+[![NHI Survival Guide](ss-nhi.png)](https://japan-refactor.com/japan-national-health-insurance/)
+<br>
+
 A specialized tool for freelancers and those transitioning from corporate life. Protect your cash flow from peak insurance premiums.
 - **Key Focus:** NHI premium simulation and transition strategy.
 
