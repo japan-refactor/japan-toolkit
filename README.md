@@ -6,7 +6,7 @@ This project provides the logical foundation and interactive calculators to opti
 
 ---
 
-### 1. HSP Visa & Permanent Residency Simulator
+### 1. [HSP Visa & Permanent Residency Simulator](https://japan-refactor.com/high-skilled-professional-visa-japan-engineer/)
 
 [![HSP Visa Simulator](ss-hsp.png)](https://japan-refactor.com/high-skilled-professional-visa-japan-engineer/)
 <br>
@@ -14,7 +14,7 @@ This project provides the logical foundation and interactive calculators to opti
 Maximize your points for the High-Skilled Professional visa. Discover legal shortcuts to Permanent Residency in as little as 1 year.
 - **Key Focus:** Point optimization, J-Skip compliance, and residency fast-tracking.
 
-### 2. Strategic Tax & Net Salary Navigator
+### 2. [Strategic Tax & Net Salary Navigator](https://japan-refactor.com/8million-yen-salary-after-tax/)
 
 [![Strategic Tax Navigator](ss-tax.png)](https://japan-refactor.com/8million-yen-salary-after-tax/)
 <br>
@@ -22,7 +22,7 @@ Maximize your points for the High-Skilled Professional visa. Discover legal shor
 Visualize your true net income. This simulator helps you navigate the "2nd-year Resident Tax cliff" and implement legal shields for your capital.
 - **Key Focus:** Resident Tax optimization, Income Tax brackets, and capital protection.
 
-### 3. Japan Pension 100% Recovery Blueprint
+### 3. [Japan Pension 100% Recovery Blueprint](https://japan-refactor.com/japan-pension-refund/)
 
 [![Japan Pension Blueprint](ss-pension.png)](https://japan-refactor.com/japan-pension-refund/)
 <br>
@@ -30,7 +30,7 @@ Visualize your true net income. This simulator helps you navigate the "2nd-year 
 Plan your exit strategy with precision. Estimate your Lump-sum Withdrawal Payment and master the strategy to recover the 20.42% tax shark.
 - **Key Focus:** Lump-sum withdrawal, Tax Manager setup, and 100% recovery logic.
 
-### 4. National Health Insurance (NHI) Survival Guide
+### 4. [National Health Insurance (NHI) Survival Guide](https://japan-refactor.com/japan-national-health-insurance/)
 
 [![NHI Survival Guide](ss-nhi.png)](https://japan-refactor.com/japan-national-health-insurance/)
 <br>
