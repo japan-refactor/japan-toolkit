@@ -46,6 +46,7 @@ This toolkit is part of the **Japan-Refactor** initiative. We believe that high-
 - **Status:** Active / Production Ready
 - **Authority:** Data verified against 2026 Japanese tax and immigration guidelines.
 - **Source:** Powered by [Japan-Refactor.com](https://japan-refactor.com)
+- **Community:** Support and review this project on [SaaSHub](https://www.saashub.com/japan-refactor)
 
 ---
 © 2026 Japan-Refactor. All Rights Reserved.
