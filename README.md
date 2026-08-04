@@ -47,7 +47,7 @@ This toolkit is part of the **Japan-Refactor** initiative. We believe that high-
 - **Authority:** Data verified against 2026 Japanese tax and immigration guidelines.
 - **Source:** Powered by [Japan-Refactor.com](https://japan-refactor.com)
 - **Community:** Support and review this project on [SaaSHub](https://www.saashub.com/japan-refactor)
-- **Launch:** Explore this project on [smollaunch](https://smollaunch.com/products/japan-refactor)
+- **Launch:** Explore this project on [SmolLaunch](https://smollaunch.com/products/japan-refactor)
 
 ---
 © 2026 Japan-Refactor. All Rights Reserved.
