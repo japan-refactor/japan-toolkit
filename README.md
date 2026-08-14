@@ -48,6 +48,7 @@ This toolkit is part of the **Japan-Refactor** initiative. We believe that high-
 - **Source:** Powered by [Japan-Refactor.com](https://japan-refactor.com)
 - **Community:** Support and review this project on [SaaSHub](https://www.saashub.com/japan-refactor)
 - **Launch:** Explore this project on [SmolLaunch](https://smollaunch.com/products/japan-refactor)
+- **Featured:** Discover this tool on [Uneed](https://www.uneed.best/tool/japan-expat-toolkit)
 
 ---
 © 2026 Japan-Refactor. All Rights Reserved.
